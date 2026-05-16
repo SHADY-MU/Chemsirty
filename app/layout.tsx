@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono , Kadwa } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Geist, Geist_Mono, Kadwa } from "next/font/google";
 import "./globals.css";
 import Navbar from "./common/Navbar/Navbar";
 import Footer from "./common/Footer/Footer";
@@ -22,7 +22,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Chemsirty",
   description: "A Learning Platform website",
-  
+};
+
+export const viewport: Viewport = {
+  themeColor: '#1E0B2E',
 };
 
 export default function RootLayout({
@@ -32,8 +35,8 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-screen antialiased`}
+      lang="ar"
+      className={`${geistSans.variable} ${geistMono.variable} h-screen antialiased bg-main`}
     >
       <body className={`min-h-screen flex flex-col bg-main m-0 p-0 ${kadwa.className}`}>
         <Navbar />
