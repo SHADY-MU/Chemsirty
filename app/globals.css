@@ -28,7 +28,16 @@
 }
 
 .bar {
-  @apply text-secondary text-3xl hover:bg-purple-950 active:bg-purple-950 border-2 border-transparent px-3 py-2 hover:border-black transition-all duration-100 ease-linear hover:text-white hover:rounded-sm cursor-pointer active:border-black active:text-white active:rounded-sm
+  @apply text-secondary text-3xl hover:bg-purple-950 border-2 border-transparent px-3 py-2 hover:border-black transition-all duration-100 ease-linear hover:text-white hover:rounded-sm cursor-pointer active:border-black active:text-white active:rounded-sm active:bg-purple-950;
+}
+
+/* Custom extracted utilities to keep TSX clean */
+.btn-outline-glow {
+  @apply bg-transparent border cursor-pointer border-secondary text-secondary hover:bg-secondary active:bg-secondary hover:text-main2 active:text-main2 rounded-full font-bold transition-all shadow-[0_0_10px_rgba(23, 229, 207, 0.4)] hover:shadow-[0_0_20px_rgba(23, 229, 207, 0.8)] active:shadow-[0_0_20px_rgba(23, 229, 207, 0.8)];
+}
+
+.card-glow {
+  @apply bg-main2 border cursor-pointer border-secondary rounded-3xl overflow-hidden shadow-[0_0_10px_rgba(23, 229, 207, 0.1)] hover:shadow-[0_0_20px_rgba(23, 229, 207, 0.4)] active:shadow-[0_0_20px_rgba(23, 229, 207, 0.4)] transition-all;
 }
 
 @media (prefers-color-scheme: dark) {

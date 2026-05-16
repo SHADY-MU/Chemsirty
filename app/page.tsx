@@ -24,7 +24,7 @@ export default function Home() {
 
           <Link
             href={"/courses/all-courses"}
-            className="bg-transparent border cursor-pointer border-secondary text-secondary hover:bg-secondary active:bg-secondary hover:text-main2 active:text-main2 px-10 py-3 rounded-full text-xl font-bold transition-all shadow-[0_0_10px_rgba(23,229,207,0.4)] hover:shadow-[0_0_20px_rgba(23,229,207,0.8)] active:shadow-[0_0_20px_rgba(23,229,207,0.8)]"
+            className="btn-outline-glow px-10 py-3 text-xl"
           >
             اشترك الآن
           </Link>
@@ -35,7 +35,7 @@ export default function Home() {
       <section className="flex flex-col items-center mb-16 w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
           {[1, 2, 3, 4, 5, 6].map((item) => (
-            <div key={item} className="bg-main2 border cursor-pointer border-secondary rounded-3xl overflow-hidden shadow-[0_0_10px_rgba(23,229,207,0.1)] hover:shadow-[0_0_20px_rgba active:shadow-[0_0_20px_rgba(23,229,207,0.4)] transition-all flex flex-col h-[320px]">
+            <div key={item} className="card-glow flex flex-col h-[320px]">
               <div className="flex-1 bg-white/5 flex items-center justify-center">
                 <span className="text-secondary/50">Course Image</span>
               </div>
@@ -46,7 +46,7 @@ export default function Home() {
           ))}
         </div>
 
-        <Link href={"/courses/all-courses"} className="mt-12 cursor-pointer bg-transparent border border-secondary text-secondary hover:bg-secondary active:bg-secondary hover:text-main2 active:text-main2 px-12 py-3 rounded-full text-lg font-bold transition-all shadow-[0_0_10px_rgba(23,229,207,0.4)] hover:shadow-[0_0_20px_rgba active:shadow-[0_0_20px_rgba(23,229,207,0.8)]">
+        <Link href={"/courses/all-courses"} className="btn-outline-glow px-12 py-3 mt-12 text-lg">
           See More
         </Link>
       </section>
