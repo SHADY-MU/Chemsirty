@@ -13,7 +13,7 @@
 }
 
 @theme {
-  --color-main: #431866;
+  --color-main: #331052; /* Darkened from #431866 to look deeper on mobile OLED screens */
   --color-main2: #1E0B2E;
   --color-color3: #17E5CF;
   --color-footer: #11061A
