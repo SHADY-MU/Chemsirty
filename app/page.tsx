@@ -1,65 +1,49 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="w-full max-w-7xl mx-auto px-4 py-8">
+      {/* Hero Section */}
+      <section className="flex flex-col md:flex-row gap-8 mb-16 items-center">
+        {/* Left Side: Image Placeholder */}
+        <div className="w-full md:w-1/2 h-64 md:h-96 bg-color3/10 rounded-3xl border border-color3 flex items-center justify-center shadow-[0_0_15px_rgba(23,229,207,0.2)]">
+          <span className="text-color3/60 text-lg">Image Placeholder</span>
+        </div>
+
+        {/* Right Side: Content */}
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+            Welcome to <span className="text-color3">Chemsirty</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-gray-300 text-lg">
+            Join the best platform to master your subjects with comprehensive courses, lectures, and interactive study material.
           </p>
+          <Link href={"/courses/all-courses"} className="bg-transparent border cursor-pointer border-color3 text-color3 hover:bg-color3 hover:text-main2 px-10 py-3 rounded-full text-xl font-bold transition-all shadow-[0_0_10px_rgba(23,229,207,0.4)] hover:shadow-[0_0_20px_rgba(23,229,207,0.8)]">
+            اشترك الان
+          </Link>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Courses Section w/ Grid */}
+      <section className="flex flex-col items-center mb-16 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+          {[1, 2, 3, 4, 5, 6].map((item) => (
+            <div key={item} className="bg-main2 border cursor-pointer border-color3 rounded-3xl overflow-hidden shadow-[0_0_10px_rgba(23,229,207,0.1)] hover:shadow-[0_0_20px_rgba(23,229,207,0.4)] transition-all flex flex-col h-[320px]">
+              <div className="flex-1 bg-white/5 flex items-center justify-center">
+                <span className="text-color3/50">Course Image</span>
+              </div>
+              <div className="bg-main/60 h-20 flex flex-col items-center justify-center border-t border-color3/30 p-4">
+                <h3 className="text-white font-semibold text-xl truncate w-full text-center">Price & Course Name</h3>
+              </div>
+            </div>
+          ))}
         </div>
-      </main>
+
+        <Link href={"/courses/all-courses"} className="mt-12 cursor-pointer bg-transparent border border-color3 text-color3 hover:bg-color3 hover:text-main2 px-12 py-3 rounded-full text-lg font-bold transition-all shadow-[0_0_10px_rgba(23,229,207,0.4)] hover:shadow-[0_0_20px_rgba(23,229,207,0.8)]">
+          See More
+        </Link>
+      </section>
     </div>
   );
 }
