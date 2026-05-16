@@ -7,8 +7,8 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row gap-8 mb-16 items-center">
         {/* Left Side: Image Placeholder */}
-        <div className="w-full md:w-1/2 h-64 md:h-96 bg-secondary/10 rounded-3xl border border-secondary flex items-center justify-center shadow-[0_0_15px_rgba(23,229,207,0.2)]">
-          <span className="text-secondary/60 text-lg">Image Placeholder</span>
+        <div className="w-full md:w-1/2 bg-secondary/10 rounded-3xl border border-secondary flex flex-col shadow-[0_0_15px_rgba(23,229,207,0.2)] overflow-hidden">
+          <img src="/MR.jpg" className="w-full h-auto block" alt="Hero" />
         </div>
 
         {/* Right Side: Content */}
