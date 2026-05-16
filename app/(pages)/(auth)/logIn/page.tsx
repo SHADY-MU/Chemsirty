@@ -47,21 +47,21 @@ export default function LogInPage() {
           <div className="flex justify-between items-center text-sm">
             <label className="flex items-center gap-2 cursor-pointer group">
               <input type="checkbox" className="w-4 h-4 rounded border-gray-700 bg-main text-secondary focus:ring-secondary focus:ring-offset-main accent-secondary cursor-pointer" />
-              <span className="text-gray-400 group-hover:text-gray-300 transition-colors">تذكرني</span>
+              <span className="text-gray-400 group-hover:text-gray-300 group-active:text-gray-300 transition-colors">تذكرني</span>
             </label>
-            <Link href="#" className="text-secondary hover:text-white transition-colors">
+            <Link href="#" className="text-secondary hover:text-white active:text-white transition-colors">
               هل نسيت كلمة المرور؟
             </Link>
           </div>
 
-          <button className="mt-4 w-full bg-secondary text-main2 font-bold text-lg py-3 rounded-xl hover:brightness-110 active:scale-95 transition-all shadow-[0_0_15px_rgba(23,229,207,0.4)]">
+          <button className="mt-4 w-full bg-secondary text-main2 font-bold text-lg py-3 rounded-xl hover:brightness-110 active:brightness-110 active:scale-95 transition-all shadow-[0_0_15px_rgba(23,229,207,0.4)]">
             تسجيل الدخول
           </button>
         </form>
 
         <p className="text-center text-gray-400 mt-8 relative z-10">
           لا تمتلك حساب؟{' '}
-          <Link href="/signIn" className="text-secondary font-bold hover:text-white transition-colors">
+          <Link href="/signIn" className="text-secondary font-bold hover:text-white active:text-white transition-colors">
             إنشاء حساب جديد
           </Link>
         </p>

@@ -28,7 +28,7 @@
 }
 
 .bar {
-  @apply text-secondary text-3xl hover:bg-purple-950 border-2 border-transparent px-3 py-2 hover:border-black transition-all duration-100 ease-linear hover:text-white hover:rounded-sm cursor-pointer active:border-black active:text-white active:rounded-sm
+  @apply text-secondary text-3xl hover:bg-purple-950 active:bg-purple-950 border-2 border-transparent px-3 py-2 hover:border-black transition-all duration-100 ease-linear hover:text-white hover:rounded-sm cursor-pointer active:border-black active:text-white active:rounded-sm
 }
 
 @media (prefers-color-scheme: dark) {

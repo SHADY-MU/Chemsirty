@@ -9,10 +9,10 @@ export default function LecturesPage() {
         <button className="px-10 py-3 rounded-full border-2 border-secondary text-secondary font-bold text-xl shadow-[0_0_15px_rgba(23,229,207,0.5)] bg-main2 transition-all">
           المحاضرات
         </button>
-        <button className="px-10 py-3 rounded-full border-2 border-teal-800 text-teal-600 font-bold text-xl hover:border-secondary hover:text-secondary transition-all bg-main2/50 hover:shadow-[0_0_15px_rgba(23,229,207,0.3)]">
+        <button className="px-10 py-3 rounded-full border-2 border-teal-800 text-teal-600 font-bold text-xl hover:border-secondary active:border-secondary hover:text-secondary active:text-secondary transition-all bg-main2/50 hover:shadow-[0_0_15px_rgba active:shadow-[0_0_15px_rgba(23,229,207,0.3)]">
           الامتحانات
         </button>
-        <button className="px-10 py-3 rounded-full border-2 border-teal-800 text-teal-600 font-bold text-xl hover:border-secondary hover:text-secondary transition-all bg-main2/50 hover:shadow-[0_0_15px_rgba(23,229,207,0.3)]">
+        <button className="px-10 py-3 rounded-full border-2 border-teal-800 text-teal-600 font-bold text-xl hover:border-secondary active:border-secondary hover:text-secondary active:text-secondary transition-all bg-main2/50 hover:shadow-[0_0_15px_rgba active:shadow-[0_0_15px_rgba(23,229,207,0.3)]">
           المراجعات
         </button>
       </div>
@@ -20,7 +20,7 @@ export default function LecturesPage() {
       {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
         {[1, 2, 3, 4, 5, 6].map((item) => (
-          <div key={item} className="bg-main2 border border-secondary/30 rounded-3xl overflow-hidden shadow-[0_0_10px_rgba(23,229,207,0.1)] hover:shadow-[0_0_20px_rgba(23,229,207,0.4)] transition-all flex flex-col h-[320px]">
+          <div key={item} className="bg-main2 border border-secondary/30 rounded-3xl overflow-hidden shadow-[0_0_10px_rgba(23,229,207,0.1)] hover:shadow-[0_0_20px_rgba active:shadow-[0_0_20px_rgba(23,229,207,0.4)] transition-all flex flex-col h-[320px]">
             <div className="flex-1 bg-white/5 flex items-center justify-center">
               <span className="text-secondary/50 font-semibold">Course Image</span>
             </div>

@@ -7,7 +7,7 @@ export default function CoursesPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
         {[1, 2, 3, 4, 5, 6].map((course) => (
-          <div key={course} className="bg-main2 border border-secondary/30 rounded-2xl overflow-hidden shadow-lg flex flex-col transition-transform hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(23,229,207,0.3)]">
+          <div key={course} className="bg-main2 border border-secondary/30 rounded-2xl overflow-hidden shadow-lg flex flex-col transition-transform hover:-translate-y-1 active:-translate-y-1 hover:shadow-[0_0_15px_rgba active:shadow-[0_0_15px_rgba(23,229,207,0.3)]">
             {/* Image Placeholder */}
             <div className="h-44 bg-white/5 flex items-center justify-center">
               <span className="text-secondary/40 font-semibold">صورة الكورس</span>
@@ -28,7 +28,7 @@ export default function CoursesPage() {
                 </div>
               </div>
 
-              <button className="mt-6 w-full bg-secondary cursor-pointer text-main2 hover:brightness-110 font-bold py-3 rounded-full transition-all shadow-[0_0_10px_rgba(23,229,207,0.5)] active:scale-95">
+              <button className="mt-6 w-full bg-secondary cursor-pointer text-main2 hover:brightness-110 active:brightness-110 font-bold py-3 rounded-full transition-all shadow-[0_0_10px_rgba(23,229,207,0.5)] active:scale-95">
                 الدخول للكورس
               </button>
             </div>

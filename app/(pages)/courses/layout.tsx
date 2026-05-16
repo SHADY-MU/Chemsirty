@@ -14,7 +14,7 @@ export default function CourseLayout({ children }: { children: React.ReactNode }
     const isActive = pathname === href  ;
     return `flex items-center gap-3 py-3 px-3 rounded-md transition-all shadow-sm overflow-hidden border-r-4 ${isActive
         ? 'bg-[#1e4d56] text-secondary border-secondary brightness-110'
-        : 'hover:bg-[#1e4d56]/50 text-gray-300 hover:text-white border-transparent hover:border-gray-500'
+        : 'hover:bg-[#1e4d56]/50 active:bg-[#1e4d56]/50 text-gray-300 hover:text-white active:text-white border-transparent hover:border-gray-500 active:border-gray-500'
       }`;
   };
 
@@ -25,7 +25,7 @@ export default function CourseLayout({ children }: { children: React.ReactNode }
       <div className="md:hidden w-full flex p-3 bg-main2 border-b border-secondary/20">
         <button
           onClick={() => setIsOpenMobile(true)}
-          className="bg-[#1e4d56] text-white p-2 px-3 text-lg rounded-md flex items-center gap-2 hover:brightness-110 transition-all"
+          className="bg-[#1e4d56] text-white p-2 px-3 text-lg rounded-md flex items-center gap-2 hover:brightness-110 active:brightness-110 transition-all"
         >
           <FaBars />
           <span className="text-sm font-bold">القائمة</span>
@@ -57,7 +57,7 @@ export default function CourseLayout({ children }: { children: React.ReactNode }
 
         {/* Mobile close button */}
         <div className="md:hidden w-full flex justify-start mb-6">
-          <button onClick={() => setIsOpenMobile(false)} className="text-white text-2xl hover:text-secondary">
+          <button onClick={() => setIsOpenMobile(false)} className="text-white text-2xl hover:text-secondary active:text-secondary">
             <FaTimes />
           </button>
         </div>
@@ -66,7 +66,7 @@ export default function CourseLayout({ children }: { children: React.ReactNode }
         <div className="w-full justify-end mb-10 relative hidden md:flex">
           <button
             onClick={() => setIsOpenDesktop(!isOpenDesktop)}
-            className="bg-black border border-gray-800 text-white p-2 rounded hover:bg-secondary hover:text-black transition-all absolute left-0 top-0 z-10 flex items-center justify-center w-8 h-8"
+            className="bg-black border border-gray-800 text-white p-2 rounded hover:bg-secondary active:bg-secondary hover:text-black active:text-black transition-all absolute left-0 top-0 z-10 flex items-center justify-center w-8 h-8"
           >
             <span className="text-xs">{isOpenDesktop ? <FaChevronRight /> : <FaChevronLeft />}</span>
           </button>

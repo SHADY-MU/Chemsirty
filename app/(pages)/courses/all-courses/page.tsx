@@ -7,12 +7,12 @@ export default function AllCoursesPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
         {[1, 2, 3, 4, 5, 6, 7, 8].map((course) => (
-          <div key={course} className="bg-main2 border border-secondary/30 rounded-2xl overflow-hidden shadow-lg flex flex-col transition-transform hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(23,229,207,0.3)]">
+          <div key={course} className="bg-main2 border border-secondary/30 rounded-2xl overflow-hidden shadow-lg flex flex-col transition-transform hover:-translate-y-1 active:-translate-y-1 hover:shadow-[0_0_15px_rgba active:shadow-[0_0_15px_rgba(23,229,207,0.3)]">
             {/* Image Placeholder */}
             <div className="h-44 bg-white/5 flex items-center justify-center relative group">
-              <span className="text-secondary/40 font-semibold transition-opacity group-hover:opacity-0">صورة الكورس</span>
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-                <button className="bg-secondary/20 text-secondary border border-secondary px-4 py-2 rounded-full font-bold hover:bg-secondary hover:text-main2 transition-all">
+              <span className="text-secondary/40 font-semibold transition-opacity group-hover:opacity-0 group-active:opacity-0">صورة الكورس</span>
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 group-active:opacity-100 flex items-center justify-center transition-opacity">
+                <button className="bg-secondary/20 text-secondary border border-secondary px-4 py-2 rounded-full font-bold hover:bg-secondary active:bg-secondary hover:text-main2 active:text-main2 transition-all">
                   معاينة الكورس
                 </button>
               </div>
@@ -33,7 +33,7 @@ export default function AllCoursesPage() {
                 </div>
               </div>
 
-              <button className="mt-6 w-full bg-secondary cursor-pointer text-main2 hover:brightness-110 font-bold py-3 rounded-full transition-all shadow-[0_0_10px_rgba(23,229,207,0.5)] active:scale-95">
+              <button className="mt-6 w-full bg-secondary cursor-pointer text-main2 hover:brightness-110 active:brightness-110 font-bold py-3 rounded-full transition-all shadow-[0_0_10px_rgba(23,229,207,0.5)] active:scale-95">
                 اشترك الآن
               </button>
             </div>

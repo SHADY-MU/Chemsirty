@@ -18,10 +18,10 @@ export default function QnAPage() {
               placeholder="....السؤال"
             ></textarea>
             <div className="absolute bottom-4 left-4 flex items-center gap-3 bg-main px-2 py-1 rounded-full border border-gray-800">
-              <button title="إرفاق صورة" className="text-gray-400 hover:text-secondary transition-colors p-2 rounded-full hover:bg-white/5 text-xl">
+              <button title="إرفاق صورة" className="text-gray-400 hover:text-secondary active:text-secondary transition-colors p-2 rounded-full hover:bg-white/5 active:bg-white/5 text-xl">
                 <FaImage />
               </button>
-              <button className="bg-secondary text-main2 p-3 rounded-full hover:brightness-110 shadow-lg shadow-secondary/20 transition-all font-bold group ml-1 text-md">
+              <button className="bg-secondary text-main2 p-3 rounded-full hover:brightness-110 active:brightness-110 shadow-lg shadow-secondary/20 transition-all font-bold group ml-1 text-md">
                 <span className="block group-active:scale-95 transition-transform -translate-x-[1px] translate-y-[1px]">
                   <FaPaperPlane />
                 </span>
@@ -33,7 +33,7 @@ export default function QnAPage() {
         {/* Questions Feed */}
         <div className="flex flex-col gap-6 mt-4">
           {[1, 2, 3].map((item) => (
-            <div key={item} className="bg-main2 border border-gray-800/80 rounded-3xl p-6 shadow-md flex flex-col gap-5 transition-all hover:border-secondary/40 group">
+            <div key={item} className="bg-main2 border border-gray-800/80 rounded-3xl p-6 shadow-md flex flex-col gap-5 transition-all hover:border-secondary/40 active:border-secondary/40 group">
 
               {/* Question Header */}
               <div className="flex items-center gap-4">
@@ -41,7 +41,7 @@ export default function QnAPage() {
                   <span className="text-xl opacity-80">👤</span>
                 </div>
                 <div className="flex flex-col">
-                  <h3 className="font-bold text-lg text-white group-hover:text-secondary transition-colors">Student Name</h3>
+                  <h3 className="font-bold text-lg text-white group-hover:text-secondary group-active:text-secondary transition-colors">Student Name</h3>
                   <span className="text-xs text-gray-500 mt-1">منذ ساعتين</span>
                 </div>
               </div>

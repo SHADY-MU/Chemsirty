@@ -87,14 +87,14 @@ export default function SignUpPage() {
             </div>
           </div>
 
-          <button className="mt-4 w-full bg-secondary text-main2 font-bold text-lg py-3 rounded-xl hover:brightness-110 active:scale-95 transition-all shadow-[0_0_15px_rgba(23,229,207,0.4)]">
+          <button className="mt-4 w-full bg-secondary text-main2 font-bold text-lg py-3 rounded-xl hover:brightness-110 active:brightness-110 active:scale-95 transition-all shadow-[0_0_15px_rgba(23,229,207,0.4)]">
             إنشاء حساب
           </button>
         </form>
 
         <p className="text-center text-gray-400 mt-6 relative z-10">
           لديك حساب بالفعل؟{' '}
-          <Link href="/logIn" className="text-secondary font-bold hover:text-white transition-colors">
+          <Link href="/logIn" className="text-secondary font-bold hover:text-white active:text-white transition-colors">
             تسجيل الدخول
           </Link>
         </p>
