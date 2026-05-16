@@ -13,7 +13,7 @@ export default function CourseLayout({ children }: { children: React.ReactNode }
   const getLinkClasses = (href: string) => {
     const isActive = pathname === href  ;
     return `flex items-center gap-3 py-3 px-3 rounded-md transition-all shadow-sm overflow-hidden border-r-4 ${isActive
-        ? 'bg-[#1e4d56] text-color3 border-color3 brightness-110'
+        ? 'bg-[#1e4d56] text-secondary border-secondary brightness-110'
         : 'hover:bg-[#1e4d56]/50 text-gray-300 hover:text-white border-transparent hover:border-gray-500'
       }`;
   };
@@ -22,7 +22,7 @@ export default function CourseLayout({ children }: { children: React.ReactNode }
     <div className="flex flex-col md:flex-row w-full min-h-[80vh] bg-main relative" dir="rtl">
 
       {/* Mobile Toggle Banner */}
-      <div className="md:hidden w-full flex p-3 bg-main2 border-b border-color3/20">
+      <div className="md:hidden w-full flex p-3 bg-main2 border-b border-secondary/20">
         <button
           onClick={() => setIsOpenMobile(true)}
           className="bg-[#1e4d56] text-white p-2 px-3 text-lg rounded-md flex items-center gap-2 hover:brightness-110 transition-all"
@@ -43,7 +43,7 @@ export default function CourseLayout({ children }: { children: React.ReactNode }
       {/* Sidebar */}
       <aside
         className={`
-          transition-all duration-300 bg-main2 flex flex-col pt-6 pb-6 shadow-[0_0_15px_rgba(23,229,207,0.1)] border-l-2 border-color3/60 border-t-2
+          transition-all duration-300 bg-main2 flex flex-col pt-6 pb-6 shadow-[0_0_15px_rgba(23,229,207,0.1)] border-l-2 border-secondary/60 border-t-2
           
           /* Mobile styles: Off-canvas right drawer */
           fixed top-0 right-0 h-full z-[60] translate-x-full w-64 px-4
@@ -57,7 +57,7 @@ export default function CourseLayout({ children }: { children: React.ReactNode }
 
         {/* Mobile close button */}
         <div className="md:hidden w-full flex justify-start mb-6">
-          <button onClick={() => setIsOpenMobile(false)} className="text-white text-2xl hover:text-color3">
+          <button onClick={() => setIsOpenMobile(false)} className="text-white text-2xl hover:text-secondary">
             <FaTimes />
           </button>
         </div>
@@ -66,7 +66,7 @@ export default function CourseLayout({ children }: { children: React.ReactNode }
         <div className="w-full justify-end mb-10 relative hidden md:flex">
           <button
             onClick={() => setIsOpenDesktop(!isOpenDesktop)}
-            className="bg-black border border-gray-800 text-white p-2 rounded hover:bg-color3 hover:text-black transition-all absolute left-0 top-0 z-10 flex items-center justify-center w-8 h-8"
+            className="bg-black border border-gray-800 text-white p-2 rounded hover:bg-secondary hover:text-black transition-all absolute left-0 top-0 z-10 flex items-center justify-center w-8 h-8"
           >
             <span className="text-xs">{isOpenDesktop ? <FaChevronRight /> : <FaChevronLeft />}</span>
           </button>

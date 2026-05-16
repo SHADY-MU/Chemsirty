@@ -7,21 +7,21 @@ export default function QnAPage() {
       <div className="max-w-4xl mx-auto flex flex-col gap-8">
 
         {/* Write a Question Section */}
-        <div className="bg-main2 border border-color3 rounded-3xl p-6 shadow-[0_0_15px_rgba(23,229,207,0.15)] flex flex-col gap-4 relative overflow-hidden">
+        <div className="bg-main2 border border-secondary rounded-3xl p-6 shadow-[0_0_15px_rgba(23,229,207,0.15)] flex flex-col gap-4 relative overflow-hidden">
           {/* Subtle accent glow */}
-          <div className="absolute -top-10 -right-10 w-24 h-24 bg-color3/20 blur-3xl rounded-full"></div>
+          <div className="absolute -top-10 -right-10 w-24 h-24 bg-secondary/20 blur-3xl rounded-full"></div>
 
           <h2 className="text-2xl font-bold text-white mb-2">اكتب سؤالك</h2>
           <div className="relative">
             <textarea
-              className="w-full bg-main border border-color3/30 rounded-2xl p-5 min-h-[140px] text-white placeholder-gray-500 focus:outline-none focus:border-color3 focus:shadow-[0_0_10px_rgba(23,229,207,0.2)] transition-all resize-none shadow-inner text-lg"
+              className="w-full bg-main border border-secondary/30 rounded-2xl p-5 min-h-[140px] text-white placeholder-gray-500 focus:outline-none focus:border-secondary focus:shadow-[0_0_10px_rgba(23,229,207,0.2)] transition-all resize-none shadow-inner text-lg"
               placeholder="....السؤال"
             ></textarea>
             <div className="absolute bottom-4 left-4 flex items-center gap-3 bg-main px-2 py-1 rounded-full border border-gray-800">
-              <button title="إرفاق صورة" className="text-gray-400 hover:text-color3 transition-colors p-2 rounded-full hover:bg-white/5 text-xl">
+              <button title="إرفاق صورة" className="text-gray-400 hover:text-secondary transition-colors p-2 rounded-full hover:bg-white/5 text-xl">
                 <FaImage />
               </button>
-              <button className="bg-color3 text-main2 p-3 rounded-full hover:brightness-110 shadow-lg shadow-color3/20 transition-all font-bold group ml-1 text-md">
+              <button className="bg-secondary text-main2 p-3 rounded-full hover:brightness-110 shadow-lg shadow-secondary/20 transition-all font-bold group ml-1 text-md">
                 <span className="block group-active:scale-95 transition-transform -translate-x-[1px] translate-y-[1px]">
                   <FaPaperPlane />
                 </span>
@@ -33,7 +33,7 @@ export default function QnAPage() {
         {/* Questions Feed */}
         <div className="flex flex-col gap-6 mt-4">
           {[1, 2, 3].map((item) => (
-            <div key={item} className="bg-main2 border border-gray-800/80 rounded-3xl p-6 shadow-md flex flex-col gap-5 transition-all hover:border-color3/40 group">
+            <div key={item} className="bg-main2 border border-gray-800/80 rounded-3xl p-6 shadow-md flex flex-col gap-5 transition-all hover:border-secondary/40 group">
 
               {/* Question Header */}
               <div className="flex items-center gap-4">
@@ -41,7 +41,7 @@ export default function QnAPage() {
                   <span className="text-xl opacity-80">👤</span>
                 </div>
                 <div className="flex flex-col">
-                  <h3 className="font-bold text-lg text-white group-hover:text-color3 transition-colors">Student Name</h3>
+                  <h3 className="font-bold text-lg text-white group-hover:text-secondary transition-colors">Student Name</h3>
                   <span className="text-xs text-gray-500 mt-1">منذ ساعتين</span>
                 </div>
               </div>
@@ -57,13 +57,13 @@ export default function QnAPage() {
                 <div className="absolute right-6 -top-3 bottom-8 w-[2px] bg-gray-800 rounded-full"></div>
 
                 <div className="flex gap-4 items-start pr-1 relative z-10 w-full mt-4">
-                  <div className="w-10 h-10 bg-color3/20 rounded-full flex items-center justify-center shrink-0 border border-color3 mt-2">
-                    <span className="text-color3 font-bold text-sm">A</span>
+                  <div className="w-10 h-10 bg-secondary/20 rounded-full flex items-center justify-center shrink-0 border border-secondary mt-2">
+                    <span className="text-secondary font-bold text-sm">A</span>
                   </div>
                   <div className="flex flex-col bg-[#1e4d56]/20 border border-[#1e4d56]/50 rounded-2xl p-5 flex-1 shadow-sm">
                     <div className="flex justify-between items-center mb-3">
-                      <h4 className="font-bold text-sm text-color3">Admin Name</h4>
-                      <span className="text-xs text-color3/60">منذ ساعة</span>
+                      <h4 className="font-bold text-sm text-secondary">Admin Name</h4>
+                      <span className="text-xs text-secondary/60">منذ ساعة</span>
                     </div>
                     <p className="text-sm md:text-base text-gray-300 leading-relaxed">
                       هذا رد افتراضي على سؤالك. سيقوم المشرف بالإجابة هنا وستظهر الإجابة بهذا الشكل.

@@ -12,21 +12,24 @@
   --font-mono: var(--font-geist-mono);
 }
 
+
 @theme {
-  --color-main: #331052; /* Darkened from #431866 to look deeper on mobile OLED screens */
+  --color-main: #331052;
+  /* Darkened from #431866 to look deeper on mobile OLED screens */
   --color-main2: #1E0B2E;
-  --color-color3: #17E5CF;
+  --color-secondary: #0FBDAA;
+  /* Darkened from #17E5CF */
   --color-footer: #11061A
 }
 
 .link {
   background: rgba(77, 31, 77, 0.4);
   /* The design uses pill-shaped buttons with teal borders */
-  @apply lg:px-6 md:px-4 sm:w-full lg:text-xl md:text-sm py-2 border border-color3 rounded-full flex items-center justify-center gap-3 hover:bg-color3 active:bg-color3 cursor-pointer text-color3 hover:text-main2 active:text-main2 transition-all;
+  @apply lg:px-6 md:px-4 sm:w-full lg:text-xl md:text-sm py-2 border border-secondary rounded-full flex items-center justify-center gap-3 hover:bg-secondary active:bg-secondary cursor-pointer text-secondary hover:text-main2 active:text-main2 transition-all;
 }
 
 .bar {
-  @apply text-color3 text-3xl hover:bg-purple-950 border-2 border-transparent px-3 py-2 hover:border-black transition-all duration-100 ease-linear hover:text-white hover:rounded-sm cursor-pointer active:border-black active:text-white active:rounded-sm
+  @apply text-secondary text-3xl hover:bg-purple-950 border-2 border-transparent px-3 py-2 hover:border-black transition-all duration-100 ease-linear hover:text-white hover:rounded-sm cursor-pointer active:border-black active:text-white active:rounded-sm
 }
 
 @media (prefers-color-scheme: dark) {

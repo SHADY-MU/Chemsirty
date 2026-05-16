@@ -18,7 +18,7 @@ export default function Navbar() {
 
     const getLinkClasses = (href: string) => {
         const isActive = pathname === href || (href !== '/' && pathname?.startsWith(href));
-        return `link ${isActive ? '!bg-color3 !text-main2' : ''}`;
+        return `link ${isActive ? '!bg-secondary !text-main2' : ''}`;
     };
 
     return (
@@ -26,7 +26,7 @@ export default function Navbar() {
             <p className='bar md:hidden' onClick={() => show ? setShow(false) : setShow(true)}> <FaBars /> </p>
             <ul className={` absolute top-full left-0 w-full bg-main2
     flex-col-reverse gap-3 px-2 py-3
-    text-white sm:border-t md:border-0 border-color3
+    text-white sm:border-t md:border-0 border-secondary
 
     transition-all duration-300 ease-in-out
     ${show
@@ -83,7 +83,7 @@ export default function Navbar() {
                     </Link>
                 </li>
             </ul>
-            <h2 className='text-color3 font-black lg:text-4xl md:text-2xl text-3xl'>
+            <h2 className='text-secondary font-black lg:text-4xl md:text-2xl text-3xl'>
                 Chemsirty
             </h2>
         </nav>
