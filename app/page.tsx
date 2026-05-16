@@ -6,21 +6,27 @@ export default function Home() {
     <div className="w-full max-w-7xl mx-auto px-4 py-8">
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row gap-8 mb-16 items-center">
-        {/* Left Side: Image Placeholder */}
+        {/* Left Side: Image */}
         <div className="w-full md:w-1/2 bg-secondary/10 rounded-3xl border border-secondary flex flex-col shadow-[0_0_15px_rgba(23,229,207,0.2)] overflow-hidden">
-          <img src="/MR.jpg" className="w-full h-auto block" alt="Hero" />
+          <Image src="/MR.jpg" width={1000} height={1000} className="w-full h-auto block" alt="الصورة الرئيسية" priority />
         </div>
 
         {/* Right Side: Content */}
-        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-6">
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-end text-center md:text-right gap-6">
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-            Welcome to <span className="text-secondary">Chemsirty</span>
+            مرحبًا بك في <span className="text-secondary">Chemsirty</span>
           </h1>
-          <p className="text-gray-300 text-lg">
-            Join the best platform to master your subjects with comprehensive courses, lectures, and interactive study material.
+
+          <p className="text-gray-300 text-lg leading-relaxed">
+            انضم إلى أفضل منصة لتعلّم المواد الدراسية من خلال كورسات شاملة،
+            ومحاضرات مميزة، ومواد تعليمية تفاعلية تساعدك على التفوق.
           </p>
-          <Link href={"/courses/all-courses"} className="bg-transparent border cursor-pointer border-secondary text-secondary hover:bg-secondary active:bg-secondary hover:text-main2 active:text-main2 px-10 py-3 rounded-full text-xl font-bold transition-all shadow-[0_0_10px_rgba(23,229,207,0.4)] hover:shadow-[0_0_20px_rgba active:shadow-[0_0_20px_rgba(23,229,207,0.8)]">
-            اشترك الان
+
+          <Link
+            href={"/courses/all-courses"}
+            className="bg-transparent border cursor-pointer border-secondary text-secondary hover:bg-secondary active:bg-secondary hover:text-main2 active:text-main2 px-10 py-3 rounded-full text-xl font-bold transition-all shadow-[0_0_10px_rgba(23,229,207,0.4)] hover:shadow-[0_0_20px_rgba(23,229,207,0.8)] active:shadow-[0_0_20px_rgba(23,229,207,0.8)]"
+          >
+            اشترك الآن
           </Link>
         </div>
       </section>
