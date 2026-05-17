@@ -2,8 +2,10 @@ import { Metadata } from 'next'
 import React from 'react'
 import { FaPaperPlane, FaImage } from 'react-icons/fa'
 
-export const metadata : Metadata ={
-  title : "Q&A"
+export const metadata: Metadata = {
+  title: "سؤال و جواب",
+  description:
+    "قسم سؤال وجواب داخل منصة Chemsirty لطرح أسئلتك في الكيمياء والحصول على إجابات واضحة تساعدك على الفهم والتفوق الدراسي.",
 }
 
 export default function QnAPage() {

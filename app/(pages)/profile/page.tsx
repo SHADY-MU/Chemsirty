@@ -1,5 +1,18 @@
+import { Metadata } from 'next'
 import React from 'react'
 import { FaEnvelope, FaPhone, FaBookOpen, FaGraduationCap, FaStar } from 'react-icons/fa'
+
+export const metadata: Metadata = {
+  title: "الملف الشخصي",
+  description:
+    "صفحة الملف الشخصي داخل منصة Chemsirty، تعرض بيانات الطالب، الإحصائيات، الكورسات المسجل بها، وآخر النشاطات التعليمية في مكان واحد.",
+
+  robots: {
+    index: false,
+    follow: false,
+  },
+
+}
 
 export default function ProfilePage() {
   return (

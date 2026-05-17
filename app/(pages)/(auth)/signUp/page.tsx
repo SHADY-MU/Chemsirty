@@ -1,6 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 import { FaUser, FaEnvelope, FaLock, FaPhone } from 'react-icons/fa'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "إنشاء حساب",
+  description:
+    "أنشئ حساب جديد على منصة Chemsirty للبدء في تعلم الكيمياء، والانضمام إلى الكورسات والمحاضرات التفاعلية بسهولة.",
+}
 
 export default function SignUpPage() {
   return (

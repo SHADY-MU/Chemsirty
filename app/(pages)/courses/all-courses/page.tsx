@@ -1,4 +1,11 @@
+import { Metadata } from 'next'
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: "كورسات المنصة",
+  description:
+  "اكتشف جميع كورسات Chemsirty، شاهد الكورسات المشترك بها وابدأ في الاشتراك في الكورسات المتاحة لتطوير مستواك في الكيمياء."
+}
 
 export default function AllCoursesPage() {
   return (

@@ -1,6 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 import { FaEnvelope, FaLock } from 'react-icons/fa'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "تسجيل الدخول",
+  description:
+    "سجّل دخولك إلى منصة Chemsirty لمتابعة كورساتك، مشاهدة المحتوى التعليمي، واستكمال رحلتك في تعلم الكيمياء بسهولة.",
+}
 
 export default function LogInPage() {
   return (
