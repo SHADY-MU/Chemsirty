@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Kadwa } from "next/font/google";
 import "./globals.css";
 import Navbar from "./common/Navbar/Navbar";
 import Footer from "./common/Footer/Footer";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const kadwa = Kadwa({
   subsets: ['latin'],
