@@ -1,5 +1,10 @@
+import { Metadata } from 'next'
 import React from 'react'
 import { FaPaperPlane, FaImage } from 'react-icons/fa'
+
+export const metadata : Metadata ={
+  title : "Q&A"
+}
 
 export default function QnAPage() {
   return (
@@ -18,10 +23,11 @@ export default function QnAPage() {
               placeholder="....السؤال"
             ></textarea>
             <div className="absolute bottom-4 left-4 flex items-center gap-3 bg-main px-2 py-1 rounded-full border border-gray-800">
-              <button title="إرفاق صورة" className="text-gray-400 hover:text-secondary active:text-secondary transition-colors p-2 rounded-full hover:bg-white/5 active:bg-white/5 text-xl">
+              <input type="file" hidden id='img' />
+              <label htmlFor='img' title="إرفاق صورة" className="text-gray-400 cursor-pointer hover:text-secondary active:text-secondary transition-colors p-2 rounded-full hover:bg-white/5 active:bg-white/5 text-xl">
                 <FaImage />
-              </button>
-              <button className="bg-secondary text-main2 p-3 rounded-full hover:brightness-110 active:brightness-110 shadow-lg shadow-secondary/20 transition-all font-bold group ml-1 text-md">
+              </label>
+              <button className="bg-secondary cursor-pointer text-main2 p-3 rounded-full hover:brightness-110 active:brightness-110 shadow-lg shadow-secondary/20 transition-all font-bold group ml-1 text-md">
                 <span className="block group-active:scale-95 transition-transform -translate-x-[1px] translate-y-[1px]">
                   <FaPaperPlane />
                 </span>

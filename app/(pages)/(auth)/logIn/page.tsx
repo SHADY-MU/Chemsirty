@@ -61,7 +61,7 @@ export default function LogInPage() {
 
         <p className="text-center text-gray-400 mt-8 relative z-10">
           لا تمتلك حساب؟{' '}
-          <Link href="/signIn" className="text-secondary font-bold hover:text-white active:text-white transition-colors">
+          <Link href="/signUp" className="text-secondary font-bold hover:text-white active:text-white transition-colors">
             إنشاء حساب جديد
           </Link>
         </p>
