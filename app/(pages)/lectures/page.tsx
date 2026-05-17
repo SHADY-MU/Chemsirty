@@ -1,4 +1,11 @@
+import { Metadata } from 'next'
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: "المحاضرات",
+  description:
+    "استعرض المحاضرات والامتحانات والمراجعات داخل منصة Chemsirty، وتابع المحتوى التعليمي الخاص بك في الكيمياء بطريقة منظمة وسهلة.",
+}
 
 export default function LecturesPage() {
   return (
