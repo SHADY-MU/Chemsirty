@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     description: "تعلم الكيمياء من خلال كورسات ومحاضرات احترافية مع محمد الشيخ.",
     images: [
       {
-        url: "/MR.jpg",
+        url: "https://chemsirty-pbip.vercel.app/MR.jpg",
         width: 1200,
         height: 630,
         alt: "Chemsirty منصة تعليم الكيمياء",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Chemsirty | الشيخ في الكيمياء",
     description: "منصة متخصصة في شرح الكيمياء بطريقة حديثة وتفاعلية.",
-    images: ["/MR.jpg"],
+    images: ["https://chemsirty-pbip.vercel.app/MR.jpg"],
   },
 
   robots: {
