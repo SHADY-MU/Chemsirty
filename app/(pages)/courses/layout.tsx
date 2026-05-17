@@ -78,7 +78,7 @@ export default function CourseLayout({ children }: { children: React.ReactNode }
             <span className="text-xl shrink-0"><FaHome /></span>
             <span className={`text-lg font-bold whitespace-nowrap transition-all duration-300 ${(isOpenDesktop || isOpenMobile) ? 'opacity-100 max-w-[200px]' : 'opacity-0 max-w-0 md:hidden'}`}>الرئيسية</span>
           </Link>
-          <Link href="courses/all-courses" className={getLinkClasses("/courses/all-courses")} onClick={() => setIsOpenMobile(false)}>
+          <Link href="/courses/all-courses" className={getLinkClasses("/courses/all-courses")} onClick={() => setIsOpenMobile(false)}>
             <span className="text-xl shrink-0"><FaBook /></span>
             <span className={`text-lg font-bold whitespace-nowrap transition-all duration-300 ${(isOpenDesktop || isOpenMobile) ? 'opacity-100 max-w-[200px]' : 'opacity-0 max-w-0 md:hidden'}`}>الكورسات</span>         
           </Link>
